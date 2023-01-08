@@ -1,0 +1,139 @@
+*{
+    font-family: system-ui;
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.section{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+video{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;    
+    
+}
+
+@media (min-aspect-ratio: 16/9){
+    video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+.container{
+    margin-top: 5px;
+    height: 90vh;
+    width: 50vh;
+}
+
+.title{
+    width: 100%;
+    border: 2px solid;
+    background-color: black;
+    border-radius: 10px;
+    opacity: .8;
+}
+
+.title_style{
+    margin: 20px;
+    padding: 0px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+.calculator{
+    border: 4px solid rgb(33, 33, 248);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: linear-gradient(rgb(0, 110, 255),rgb(0, 195, 255),rgb(0, 149, 255));
+}
+
+.calculator:hover{
+    box-shadow: 3px 3px 40px black;
+}
+
+.display{
+    width: 100%;
+    height: 63px;
+    margin-top: 20px;
+}
+
+.display input{
+    border: 2px solid;
+    width: 100%;
+    height: 60px;
+    border-radius: 7px;
+    font-size: 33px;
+    font-weight: 700;
+    padding: 15px;
+    text-align: right;
+}
+
+.buttons{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.rows{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px 0px;
+}
+
+.btn{
+    height: 55px;
+    width: 55px;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    border: 2px solid blue;
+    background: linear-gradient(rgb(0, 110, 255),rgb(0, 81, 255));
+    transition: .1s all;
+}
+
+.btn:hover{
+    border: 2px solid white;
+}
+
+.btn:active{
+    box-shadow: 1px 1px 20px white;
+}
+
+.btn2{
+    height: 55px;
+    border-radius: 5px;
+    width: 138px;
+}
